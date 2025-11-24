@@ -1,0 +1,64 @@
+plugins {
+    id 'eclipse'
+    id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '6.0.+'
+}
+
+group = project.mod_group_id
+version = project.mod_version
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
+
+minecraft {
+    mappings channel: 'official', version: project.minecraft_version
+    copyIdeResources = true
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                "${project.mod_id}" {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    // можешь оставить, но уже не обязательно для локальных jar
+    maven { url = "https://maven.theillusivec4.top/" }
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
+
+    // локальные jar из папки libs
+    compileOnly fg.deobf(files("libs/curios-forge-5.14.1+1.20.1.jar"))
+    compileOnly fg.deobf(files("libs/epicfight-forge-20.13.6-1.20.1.jar"))
+
+    // если хочешь, чтобы в runClient они тоже подхватывались:
+    runtimeOnly fg.deobf(files("libs/curios-forge-5.14.1+1.20.1.jar"))
+    runtimeOnly fg.deobf(files("libs/epicfight-forge-20.13.6-1.20.1.jar"))
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    manifest {
+        attributes([
+            "Specification-Title": project.mod_name,
+            "Specification-Vendor": "oneworldstudio",
+            "Specification-Version": "1.2",
+            "Implementation-Title": project.mod_name,
+            "Implementation-Version": project.mod_version,
+            "Implementation-Vendor": "oneworldstudio",
+        ])
+    }
+}

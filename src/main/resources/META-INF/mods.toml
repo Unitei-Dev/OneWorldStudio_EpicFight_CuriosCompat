@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Apache-2.0"
+[[mods]]
+modId="epicfight_curios_compat"
+version="1.0.0"
+displayName="EpicFight Curios Compat Standalone"
+credits="One World Studion 2019-2026"
+displayURL="https://discord.gg/5FCvEkjjhM"
+authors="Unitei"
+description='''
+Standalone Curios compatibility for EpicFight with per-slot transforms and book-on-hip crouch correction.
+'''
+[[dependencies.epicfight_curios_compat]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.4.0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.epicfight_curios_compat]]
+    modId="curios"
+    mandatory=true
+    versionRange="[5.14.1,)"
+    ordering="AFTER"
+    side="CLIENT"
+[[dependencies.epicfight_curios_compat]]
+    modId="epicfight"
+    mandatory=true
+    versionRange="[20.13.6,)"
+    ordering="AFTER"
+    side="CLIENT"
