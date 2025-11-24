@@ -1,6 +1,6 @@
 HOW TO BUILD:
 1) Put your jars into /libs:
-   - epicfight-forge-20.14.0.1-1.20.1.jar
+   - epicfight-forge-20.13.6-1.20.1.jar
    - curios-forge-5.14.1+1.20.1.jar
 2) Run:
    ./gradlew clean build
