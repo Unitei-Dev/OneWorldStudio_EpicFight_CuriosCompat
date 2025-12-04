@@ -288,6 +288,12 @@ public class ClientCuriosCompat {
                 poseStack.mulPose(Axis.ZP.rotationDegrees(9.0F));
                 poseStack.mulPose(Axis.YP.rotationDegrees(6.0F));
             }
+
+            if (livingEntity != null && livingEntity.isCrouching()
+                    && "rpg_backpack".equals(rule.id)) {
+                poseStack.translate(0.0F, -0.04F, -0.02F);
+                poseStack.mulPose(Axis.XP.rotationDegrees(8.0F));
+            }
             poseStack.scale(rule.scale, rule.scale, rule.scale);
         }
     }
@@ -330,6 +336,13 @@ public class ClientCuriosCompat {
                         0.0F, 0.05F, 0.1F,
                         0F, 180F, 0F,
                         0.75F);
+
+        private static final SlotRule BACK_RPG_BACKPACK_ON_BACK =
+                new SlotRule("rpg_backpack",
+                        "Chest",
+                        0.0F, 0.02F, 0.22F,   // чуть выше и ближе к спине
+                        0F, 180F, 0F,
+                        0.70F);
 
         private static final SlotRule BACK_BACKPACKEDBACKPACK_ON_BACK =
                 new SlotRule("l2_backpack",
@@ -398,6 +411,10 @@ public class ClientCuriosCompat {
                 return BOOK_ON_HIP;
             }
 
+            if (isRpgBackpack(stack)) {
+                return BACK_RPG_BACKPACK_ON_BACK;
+            }
+
             if (isBackpackedBackpack(stack)) {
                 return BACK_BACKPACKEDBACKPACK_ON_BACK;
             }
@@ -459,6 +476,20 @@ public class ClientCuriosCompat {
             String path = key.getPath();
             return path.equals("backpack") || path.startsWith("backpack_");
         }
+
+        private static boolean isRpgBackpack(ItemStack stack) {
+            if (stack == null || stack.isEmpty()) return false;
+
+            ResourceLocation key = ForgeRegistries.ITEMS.getKey(stack.getItem());
+            if (key == null) return false;
+
+            if (!"rpg_backpacks".equals(key.getNamespace())) return false;
+
+            String path = key.getPath();
+            // leather_backpack, iron_backpack, golden_backpack, diamond_backpack, netherite_backpack
+            return path.endsWith("_backpack") || path.contains("backpack");
+        }
+
 
         private static boolean isBackpackedBackpack(ItemStack stack) {
             if (stack == null || stack.isEmpty()) return false;

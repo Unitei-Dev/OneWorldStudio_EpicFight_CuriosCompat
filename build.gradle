@@ -55,7 +55,7 @@ jar {
         attributes([
             "Specification-Title": project.mod_name,
             "Specification-Vendor": "oneworldstudio",
-            "Specification-Version": "1.2",
+            "Specification-Version": "1.3",
             "Implementation-Title": project.mod_name,
             "Implementation-Version": project.mod_version,
             "Implementation-Vendor": "oneworldstudio",

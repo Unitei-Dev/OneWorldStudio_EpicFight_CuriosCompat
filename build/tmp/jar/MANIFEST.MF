@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Specification-Title: Epic Fight X Curios Compat
 Specification-Vendor: oneworldstudio
-Specification-Version: 1.2
+Specification-Version: 1.3
 Implementation-Title: Epic Fight X Curios Compat
-Implementation-Version: 1.2
+Implementation-Version: 1.3
 Implementation-Vendor: oneworldstudio
 
