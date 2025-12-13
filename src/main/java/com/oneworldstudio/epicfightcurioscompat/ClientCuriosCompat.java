@@ -126,8 +126,50 @@ public class ClientCuriosCompat {
                             var curioRenderer = optionalRenderer.get();
                             SlotRule rule = SlotRule.forSlotAndStack(slotId, finalStack);
 
+                            // === Supplementaries: quiver ===
+                            // Для сумки из Supplementaries НЕ рисуем 2D item-модель,
+                            // а просто вызываем их ICurioRenderer с нашей привязкой к кости.
+                            if (SlotRule.isSupplementaries(finalStack)) {
+                                poseStack.pushPose();
+                                applyRuleTransform(poseStack, entitypatch, poses, rule, livingEntity);
+
+                                LivingEntityRenderer<?, ?> parentRenderer;
+                                if (livingEntity instanceof AbstractClientPlayer abstractClientPlayer) {
+                                    parentRenderer = (LivingEntityRenderer<?, ?>) Minecraft.getInstance()
+                                            .getEntityRenderDispatcher()
+                                            .getSkinMap()
+                                            .get(abstractClientPlayer.getModelName());
+                                } else {
+                                    parentRenderer = (LivingEntityRenderer<?, ?>) Minecraft.getInstance()
+                                            .getEntityRenderDispatcher()
+                                            .getSkinMap()
+                                            .get("default");
+                                }
+
+                                // нормальный вызов рендера Supplementaries, но уже в системе EpicFight
+                                curioRenderer.render(
+                                        finalStack,
+                                        slotContext,
+                                        poseStack,
+                                        parentRenderer,
+                                        buffers,
+                                        packedLight,
+                                        livingEntity.walkAnimation.position(partialTicks),
+                                        livingEntity.walkAnimation.speed(partialTicks),
+                                        partialTicks,
+                                        livingEntity.tickCount + partialTicks,
+                                        yRot,
+                                        xRot
+                                );
+
+                                poseStack.popPose();
+                                renderedEpicFightModel.setTrue();
+                                continue; // этот слот уже отрисован, дальше не идём
+                            }
+
+                            // === остальные вещи с HumanoidRender ===
                             if (curioRenderer instanceof HumanoidRender humanoidRenderer) {
-                                // Полноценный 3D-рендер через EpicFight-скелет (Relics и др.)
+                                // старый код с bake в SkinnedMesh
                                 HumanoidModel<LivingEntity> curioModel =
                                         humanoidRenderer.getModel(finalStack, slotContext);
                                 SkinnedMesh skinnedMesh;
@@ -151,7 +193,6 @@ public class ClientCuriosCompat {
                                                 .get("default");
                                     }
 
-                                    // Один раз рендерим где-то далеко, чтобы EpicFight смог "испечь" модель
                                     curioRenderer.render(finalStack, slotContext, poseStack, parentRenderer, buffers,
                                             0, 0, 0, 0, 0, 0, 0);
                                     poseStack.popPose();
@@ -183,7 +224,7 @@ public class ClientCuriosCompat {
                                 poseStack.popPose();
                                 renderedEpicFightModel.setTrue();
                             } else {
-                                // 2) Если рендерер есть, но он не Humanoid — рисуем просто item-модель с нашими смещениями
+                                // все остальные не-Humanoid рендерим как item-модель, как и было
                                 poseStack.pushPose();
                                 applyRuleTransform(poseStack, entitypatch, poses, rule, livingEntity);
 
@@ -202,8 +243,9 @@ public class ClientCuriosCompat {
                                 renderedEpicFightModel.setTrue();
                             }
 
-                            continue; // этот слот уже отрисован через CuriosRenderer
+                            continue;
                         }
+
 
                         // 3) Вообще нет Curios-renderer (Curios Back Slot, ванильные вещи и т.п.) —
                         //    наш простой fallback через item-модель
@@ -294,6 +336,19 @@ public class ClientCuriosCompat {
                 poseStack.translate(0.0F, -0.04F, -0.02F);
                 poseStack.mulPose(Axis.XP.rotationDegrees(8.0F));
             }
+
+            if (livingEntity != null && livingEntity.isCrouching()
+                    && "travelers_backpack".equals(rule.id)) {
+                poseStack.translate(0.0F, -0.04F, -0.02F);
+                poseStack.mulPose(Axis.XP.rotationDegrees(8.0F));
+            }
+
+            if (livingEntity != null && livingEntity.isCrouching()
+                    && "supplementaries".equals(rule.id)) {
+                // совсем лёгкий сдвиг, чтобы при приседе не залазило в ногу
+                poseStack.translate(0.0F, 0.02F, -0.01F);
+                poseStack.mulPose(Axis.XP.rotationDegrees(-35.0F));
+            }
             poseStack.scale(rule.scale, rule.scale, rule.scale);
         }
     }
@@ -340,9 +395,23 @@ public class ClientCuriosCompat {
         private static final SlotRule BACK_RPG_BACKPACK_ON_BACK =
                 new SlotRule("rpg_backpack",
                         "Chest",
-                        0.0F, 0.02F, 0.22F,   // чуть выше и ближе к спине
+                        0.0F, 0.02F, 0.22F,
                         0F, 180F, 0F,
                         0.70F);
+
+        private static final SlotRule BACK_TRAVELERS_BACKPACK_ON_BACK =
+                new SlotRule("travelers_backpack",
+                        "Chest",
+                        0.0F, 0.08F, 0.25F,
+                        0F, 180F, 0F,
+                        1.00F);
+
+        private static final SlotRule BACK_SUPPLEMENTARIES_ON_BACK =
+                new SlotRule("supplementaries",
+                        "Hips",
+                        -0.18F, 0.06F, -0.06F,
+                        0F, 90F, 0F,
+                        0.5F);
 
         private static final SlotRule BACK_BACKPACKEDBACKPACK_ON_BACK =
                 new SlotRule("l2_backpack",
@@ -415,6 +484,14 @@ public class ClientCuriosCompat {
                 return BACK_RPG_BACKPACK_ON_BACK;
             }
 
+            if (isTravelersBackpack(stack)) {
+                return BACK_TRAVELERS_BACKPACK_ON_BACK;
+            }
+
+            if (isSupplementaries(stack)) {
+                return BACK_SUPPLEMENTARIES_ON_BACK;
+            }
+
             if (isBackpackedBackpack(stack)) {
                 return BACK_BACKPACKEDBACKPACK_ON_BACK;
             }
@@ -463,6 +540,19 @@ public class ClientCuriosCompat {
             return forId(slotId);
         }
 
+        static boolean isSupplementaries(ItemStack stack) {
+            if (stack == null || stack.isEmpty()) return false;
+
+            Item item = stack.getItem();
+            ResourceLocation key = ForgeRegistries.ITEMS.getKey(item);
+            if (key == null) return false;
+
+            if (!"supplementaries".equals(key.getNamespace())) return false;
+
+            String path = key.getPath();
+            return path.equals("quiver") || path.startsWith("quiver_");
+        }
+
         private static boolean isL2Backpack(ItemStack stack) {
             if (stack == null || stack.isEmpty()) return false;
 
@@ -476,6 +566,27 @@ public class ClientCuriosCompat {
             String path = key.getPath();
             return path.equals("backpack") || path.startsWith("backpack_");
         }
+
+        private static boolean isTravelersBackpack(ItemStack stack) {
+            if (stack == null || stack.isEmpty()) return false;
+
+            Item item = stack.getItem();
+            ResourceLocation key = ForgeRegistries.ITEMS.getKey(item);
+            if (key == null) return false;
+
+            // Любой предмет из модпака travelersbackpack, который вообще можно положить в Curios
+            if (!"travelersbackpack".equals(key.getNamespace())) return false;
+
+            String path = key.getPath();
+            // Немного защиты от лишнего: исключаем очевидно не-рюкзаки
+            if (path.contains("sleeping_bag")) return false;
+            if (path.contains("upgrade")) return false;
+            if (path.equals("backpack_tank")) return false;
+
+            // все остальные – разные варианты рюкзаков (standard, diamond, bat, ...).
+            return true;
+        }
+
 
         private static boolean isRpgBackpack(ItemStack stack) {
             if (stack == null || stack.isEmpty()) return false;
