@@ -3,13 +3,13 @@ loaderVersion="[47,)"
 license="Apache-2.0"
 [[mods]]
 modId="epicfight_curios_compat"
-version="1.4"
+version="${file.jarVersion}"
 displayName="EpicFight x Curios Compat"
-credits="One World Studion 2019-2026"
-displayURL="https://discord.gg/5FCvEkjjhM"
+credits="One World Studio 2019-2026"
+displayURL="https://github.com/OneWorldStudio-Unitei/OneWorldStudio_EpicFight_CuriosCompat"
 authors="Unitei"
 description='''
-Standalone Curios compatibility for EpicFight with per-slot transforms and book-on-hip crouch correction.
+Standalone Curios compatibility for EpicFight with per-slot transforms, backpack bridges, and Curious Lanterns light handling.
 '''
 [[dependencies.epicfight_curios_compat]]
     modId="forge"

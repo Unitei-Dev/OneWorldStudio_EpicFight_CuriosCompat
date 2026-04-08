@@ -7,9 +7,16 @@ plugins {
 group = project.mod_group_id
 version = project.mod_version
 
+base {
+    archivesName = project.mod_id
+}
+
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(17)
 }
+
+def epicFightJarName = "epicfight-forge-${project.epicfight_version}-${project.minecraft_version}.jar"
+def epicFightJar = layout.projectDirectory.file("libs/${epicFightJarName}").asFile
 
 minecraft {
     mappings channel: 'official', version: project.minecraft_version
@@ -30,35 +37,58 @@ minecraft {
 
 repositories {
     mavenCentral()
-    // можешь оставить, но уже не обязательно для локальных jar
-    maven { url = "https://maven.theillusivec4.top/" }
+    maven {
+        name = 'Curios Maven'
+        url = 'https://maven.theillusivec4.top/'
+    }
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
 
-    // локальные jar из папки libs
-    compileOnly fg.deobf(files("libs/curios-forge-5.14.1+1.20.1.jar"))
-    compileOnly fg.deobf(files("libs/epicfight-forge-20.13.6-1.20.1.jar"))
+    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:${project.curios_version}:api")
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${project.curios_version}")
 
-    // если хочешь, чтобы в runClient они тоже подхватывались:
-    runtimeOnly fg.deobf(files("libs/curios-forge-5.14.1+1.20.1.jar"))
-    runtimeOnly fg.deobf(files("libs/epicfight-forge-20.13.6-1.20.1.jar"))
+    compileOnly fg.deobf(dependencies.create(name: "epicfight-forge-${project.epicfight_version}-${project.minecraft_version}"))
+    runtimeOnly fg.deobf(dependencies.create(name: "epicfight-forge-${project.epicfight_version}-${project.minecraft_version}"))
+}
+
+def verifyEpicFightJar = tasks.register('verifyEpicFightJar') {
+    group = 'verification'
+    description = 'Validates that the local Epic Fight dependency jar is present.'
+
+    doLast {
+        if (!epicFightJar.exists()) {
+            throw new GradleException(
+                    "Missing Epic Fight dependency: ${project.relativePath(epicFightJar)}\n" +
+                            "Download ${epicFightJarName} into the libs/ directory before running compile, build, or runClient.\n" +
+                            'This repository keeps Epic Fight as a manual local dependency because this project does not resolve it from a public Maven repository.'
+            )
+        }
+    }
 }
 
 tasks.withType(JavaCompile).configureEach {
+    dependsOn verifyEpicFightJar
     options.encoding = 'UTF-8'
+}
+
+tasks.matching { it.name.startsWith('run') }.configureEach {
+    dependsOn verifyEpicFightJar
 }
 
 jar {
     manifest {
         attributes([
-            "Specification-Title": project.mod_name,
-            "Specification-Vendor": "oneworldstudio",
-            "Specification-Version": "1.4",
-            "Implementation-Title": project.mod_name,
-            "Implementation-Version": project.mod_version,
-            "Implementation-Vendor": "oneworldstudio",
+                'Specification-Title'  : project.mod_name,
+                'Specification-Vendor' : 'oneworldstudio',
+                'Specification-Version': project.mod_version,
+                'Implementation-Title' : project.mod_name,
+                'Implementation-Version': project.mod_version,
+                'Implementation-Vendor': 'oneworldstudio'
         ])
     }
 }
