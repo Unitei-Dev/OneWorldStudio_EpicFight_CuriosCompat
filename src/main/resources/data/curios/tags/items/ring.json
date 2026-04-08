@@ -1,0 +1,177 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "arcane_abilities:icy_crystal",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:exaltation_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:virtue_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dacxirons:wither_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "darkdoppelganger:doppelganger_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:hell_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:molten_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:ring_of_life",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:ring_of_the_eternal_resting",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:cursed_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:desolation_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:ender_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:golden_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:iron_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:magnet_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:super_magnet_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "gtbcs_geomancy_plus:ring_of_the_resounding_earth",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:affinity_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:betrayer_signet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:cast_time_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:cooldown_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:emerald_stoneplate_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:fireward_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:frostward_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:invisibility_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:lurker_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:mana_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:poisonward_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:silver_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:visibility_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:made_in_heaven",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:moodworm",
+                       "required":  false
+                   },
+                   {
+                       "id":  "naturesaura:death_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "raccompat:vine_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:bastion_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:chorus_inhibitor",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:aetherial_despair_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:firestorm_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:guided_currents_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:salted_depths_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:expulsion_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:bastion_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:chorus_inhibitor",
+                       "required":  false
+                   }
+               ]
+}

@@ -1,0 +1,17 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "#aether:accessories_gloves",
+                       "required":  false
+                   },
+                   {
+                       "id":  "deep_aether:skyjade_gloves",
+                       "required":  false
+                   },
+                   {
+                       "id":  "deep_aether:stratus_gloves",
+                       "required":  false
+                   }
+               ]
+}

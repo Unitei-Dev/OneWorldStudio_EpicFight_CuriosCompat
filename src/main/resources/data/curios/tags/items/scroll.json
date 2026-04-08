@@ -1,0 +1,49 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "covenant_of_the_seven:brightest_scroll",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:divine_scroll",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:false_salvation",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:avarice_scroll",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:cosmic_scroll",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:cursed_scroll",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:darkest_scroll",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:escape_scroll",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:fabulous_scroll",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:heaven_scroll",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:xp_scroll",
+                       "required":  false
+                   }
+               ]
+}

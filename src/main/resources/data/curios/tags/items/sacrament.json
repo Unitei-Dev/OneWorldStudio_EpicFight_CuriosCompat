@@ -1,0 +1,53 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "covenant_of_the_seven:aqua_sacrament",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:blood_sacrament",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:eldritch_sacrament",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:ender_sacrament",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:evocation_sacrament",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:fire_sacrament",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:geo_sacrament",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:holy_sacrament",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:ice_sacrament",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:lightning_sacrament",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:nature_sacrament",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:wind_sacrament",
+                       "required":  false
+                   }
+               ]
+}

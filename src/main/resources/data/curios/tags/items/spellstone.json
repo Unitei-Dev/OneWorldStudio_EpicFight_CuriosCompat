@@ -1,0 +1,37 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "enigmaticlegacy:angel_blessing",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:blazing_core",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:enigmatic_item",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:eye_of_nebula",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:golem_heart",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:ocean_stone",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:the_cube",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:void_pearl",
+                       "required":  false
+                   }
+               ]
+}

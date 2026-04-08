@@ -1,0 +1,21 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "#aether:accessories_rings",
+                       "required":  false
+                   },
+                   {
+                       "id":  "deep_aether:gravitite_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "deep_aether:skyjade_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "deep_aether:stratus_ring",
+                       "required":  false
+                   }
+               ]
+}

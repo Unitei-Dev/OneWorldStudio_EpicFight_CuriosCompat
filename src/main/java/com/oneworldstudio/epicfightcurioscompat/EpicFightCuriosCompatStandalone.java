@@ -10,6 +10,9 @@ public class EpicFightCuriosCompatStandalone {
 
     public EpicFightCuriosCompatStandalone() {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
+        BackpackedCuriosBridge.register(modBus);
         ClientCuriosCompat.register(modBus);
+        CuriosSlotAttachmentFixer.register(modBus);
+        CuriousLanternsLightHandler.register();
     }
 }

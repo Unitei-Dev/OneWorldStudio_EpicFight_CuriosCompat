@@ -1,0 +1,65 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "bloodmagic:demonwillgauge",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:divinationsigil",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:experiencebook",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:growthsigil",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:icesigil",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:miningsigil",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:seersigil",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:sigilofholding",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:sigilofmagnetism",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:sigilofsuppression",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:soulgemcommon",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:soulgemgreater",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:soulgemlesser",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:soulgempetty",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:upgradetrainer",
+                       "required":  false
+                   }
+               ]
+}

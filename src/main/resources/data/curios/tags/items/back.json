@@ -1,0 +1,233 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "covenant_of_the_seven:deliverance_albarest",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:mnestia_raiment",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:fairy_wings",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:hunter_cape",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:enigmatic_elytra",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:armor_swap",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:arrow_bag",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_black",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_blue",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_brown",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_cyan",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_gray",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_green",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_light_blue",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_light_gray",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_lime",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_magenta",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_orange",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_pink",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_purple",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_red",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_white",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:backpack_yellow",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:combined_swap",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_black",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_blue",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_brown",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_cyan",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_gray",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_green",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_light_blue",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_light_gray",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_lime",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_magenta",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_orange",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_pink",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_purple",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_red",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_white",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:dimensional_storage_yellow",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:ender_backpack",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:ender_swap",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:suit_swap",
+                       "required":  false
+                   },
+                   {
+                       "id":  "l2backpack:tool_swap",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:converging_orb",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:made_in_heaven",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:shieldweave_cape",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:vertebrax",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:wonder_of_u",
+                       "required":  false
+                   },
+                   {
+                       "id":  "ramcompat:frost_robe",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:arrow_quiver",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:elytra_booster",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:midnight_robe",
+                       "required":  false
+                   },
+                   {
+                       "id":  "backpacked:backpack",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:arrow_quiver",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:elytra_booster",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:midnight_robe",
+                       "required":  false
+                   }
+               ]
+}

@@ -1,0 +1,117 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "dacxirons:divine_manuscript_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "gtbcs_geomancy_plus:bluff_instruction_manual",
+                       "required":  false
+                   },
+                   {
+                       "id":  "gtbcs_geomancy_plus:codex_of_shattered_horizons",
+                       "required":  false
+                   },
+                   {
+                       "id":  "ias_spellbooks:book_of_dark_mutations",
+                       "required":  false
+                   },
+                   {
+                       "id":  "ias_spellbooks:magispellers_legacy",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:blaze_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:copper_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:cursed_doll_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:diamond_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:dragonskin_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:druidic_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:evoker_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:gold_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:ice_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:iron_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:legendary_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:necronomicon_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:netherite_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:rotten_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:villager_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:wimpy_spell_book",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:archive_of_abyssal_secrets",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:chronicles_of_the_firelord",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:codex_of_the_crushing_depths",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:guide_to_watery_whispers",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:the_accused_codex",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:the_diamantic_archive",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:tome_of_abyssal_flora",
+                       "required":  false
+                   }
+               ]
+}

@@ -1,0 +1,65 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "gtbcs_geomancy_plus:bracelet_of_inversion",
+                       "required":  false
+                   },
+                   {
+                       "id":  "gtbcs_geomancy_plus:ring_of_the_resounding_earth",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:aetherial_despair_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:amulet_of_spectral_shift",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:azure_ignition_bracelet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:bottled_raincloud",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:collar_of_the_turning_tide",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:cryostorm_bracelet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:energy_unbound_necklace",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:firestorm_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:guided_currents_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:hydrocharge_bracelet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:nightstalkers_band",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:salted_depths_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:sigil_of_the_spider_sorcerer",
+                       "required":  false
+                   }
+               ]
+}

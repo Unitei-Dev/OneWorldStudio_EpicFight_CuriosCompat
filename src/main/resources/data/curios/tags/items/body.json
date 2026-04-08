@@ -1,0 +1,17 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "morerelics:converging_orb",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:thermoseismic_heart",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:wonder_of_u",
+                       "required":  false
+                   }
+               ]
+}

@@ -1,0 +1,45 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "#artifacts:slot/head",
+                       "required":  false
+                   },
+                   {
+                       "id":  "cataclysm:aptrgangr_head",
+                       "required":  false
+                   },
+                   {
+                       "id":  "cataclysm:draugr_head",
+                       "required":  false
+                   },
+                   {
+                       "id":  "cataclysm:kobolediator_skull",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:all_seeing_eye",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:broken_mask",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:bionic_eye",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:crown_of_the_legend",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:king_crimson",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:tyrant_mask",
+                       "required":  false
+                   }
+               ]
+}

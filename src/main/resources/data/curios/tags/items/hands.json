@@ -1,0 +1,89 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "#artifacts:slot/hands",
+                       "required":  false
+                   },
+                   {
+                       "id":  "arcane_abilities:shadow_lantern",
+                       "required":  false
+                   },
+                   {
+                       "id":  "cataclysm:blazing_grips",
+                       "required":  false
+                   },
+                   {
+                       "id":  "cataclysm:chitin_claw",
+                       "required":  false
+                   },
+                   {
+                       "id":  "cataclysm:sticky_gloves",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:annointed_handward",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:blessed_bandages",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:flaming_gloves",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:scorpion_claw",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:steel_shoulder",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:sunleia_hand",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:gravitum_glove",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:made_in_heaven",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:mass_gauntlet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:sentient_rust",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:enders_hand",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:rage_glove",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:wool_mitten",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:enders_hand",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:rage_glove",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:wool_mitten",
+                       "required":  false
+                   }
+               ]
+}

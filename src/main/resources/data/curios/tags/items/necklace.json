@@ -1,0 +1,169 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "#artifacts:slot/necklace",
+                       "required":  false
+                   },
+                   {
+                       "id":  "arcane_abilities:combined_relic",
+                       "required":  false
+                   },
+                   {
+                       "id":  "arcane_abilities:fate_beacon",
+                       "required":  false
+                   },
+                   {
+                       "id":  "arcane_abilities:stellar_sphere",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:soulgemcommon",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:soulgemgreater",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:soulgemlesser",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:soulgempetty",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:consecration",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:inversion",
+                       "required":  false
+                   },
+                   {
+                       "id":  "darkdoppelganger:elder_necklace",
+                       "required":  false
+                   },
+                   {
+                       "id":  "darkdoppelganger:summons_necklace",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:blessed_amulet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:ernos_fang_necklace",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:fang_necklace",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:klauen_necklace",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:nullfire_amulet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:thirsty_necklace",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:amethyst_resonance_charm",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:concentration_amulet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:conjurers_talisman",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:greater_conjurers_talisman",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:heavy_chain_necklace",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:teleportation_amulet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:made_in_heaven",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:opal_necklace",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:slumbering_amulet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:whispering_amulett",
+                       "required":  false
+                   },
+                   {
+                       "id":  "naturesaura:shockwave_creator",
+                       "required":  false
+                   },
+                   {
+                       "id":  "raccompat:desolate_pendant",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:holy_locket",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:jellyfish_necklace",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:reflection_necklace",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:amulet_of_spectral_shift",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:collar_of_the_turning_tide",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:energy_unbound_necklace",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:sigil_of_the_spider_sorcerer",
+                       "required":  false
+                   },
+                   {
+                       "id":  "irons_spellbooks:enchanted_ward_amulet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:holy_locket",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:jellyfish_necklace",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:reflection_necklace",
+                       "required":  false
+                   }
+               ]
+}

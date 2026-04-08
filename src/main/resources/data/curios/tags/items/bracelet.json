@@ -1,0 +1,33 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "artifacts:onion_ring",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:upgradetrainer",
+                       "required":  false
+                   },
+                   {
+                       "id":  "gtbcs_geomancy_plus:bracelet_of_inversion",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:azure_ignition_bracelet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:cryostorm_bracelet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:hydrocharge_bracelet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:nightstalkers_band",
+                       "required":  false
+                   }
+               ]
+}

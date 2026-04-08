@@ -1,0 +1,173 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "#artifacts:slot/charm",
+                       "required":  false
+                   },
+                   {
+                       "id":  "#traveloptics:echo_curio",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:demonwillgauge",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:divinationsigil",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:experiencebook",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:growthsigil",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:icesigil",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:miningsigil",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:seersigil",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:sigilofholding",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:sigilofmagnetism",
+                       "required":  false
+                   },
+                   {
+                       "id":  "bloodmagic:sigilofsuppression",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:benediction_charm",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:melodious_harmony",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:potioneer_pearl",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:serendipity_feast",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:ascension_amulet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:berserk_charm",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:eldritch_amulet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:enchanter_pearl",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:enigmatic_amulet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:enigmatic_eye",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:insignia",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:mega_sponge",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:mining_charm",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:monster_charm",
+                       "required":  false
+                   },
+                   {
+                       "id":  "enigmaticlegacy:unwitnessed_amulet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "gtbcs_geomancy_plus:geo_echo",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:axolotl_cream",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:depleted_spool",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:guts_orb",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:made_in_heaven",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:thermoseismic_heart",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:weavers_spool",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:whims_of_fate",
+                       "required":  false
+                   },
+                   {
+                       "id":  "naturesaura:eye",
+                       "required":  false
+                   },
+                   {
+                       "id":  "naturesaura:eye_improved",
+                       "required":  false
+                   },
+                   {
+                       "id":  "ramcompat:stink_gland",
+                       "required":  false
+                   },
+                   {
+                       "id":  "ramcompat:tendon_lump",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:spore_sack",
+                       "required":  false
+                   },
+                   {
+                       "id":  "traveloptics:bottled_raincloud",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:spore_sack",
+                       "required":  false
+                   }
+               ]
+}

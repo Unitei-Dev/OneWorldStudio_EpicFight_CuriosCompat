@@ -1,0 +1,9 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "#artifacts:slot/all",
+                       "required":  false
+                   }
+               ]
+}

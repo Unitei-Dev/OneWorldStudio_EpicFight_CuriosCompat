@@ -1,0 +1,85 @@
+{
+    "replace":  false,
+    "values":  [
+                   {
+                       "id":  "#artifacts:slot/feet",
+                       "required":  false
+                   },
+                   {
+                       "id":  "arcane_abilities:weightless_boot",
+                       "required":  false
+                   },
+                   {
+                       "id":  "covenant_of_the_seven:hallowed_steps",
+                       "required":  false
+                   },
+                   {
+                       "id":  "dungeons_and_combat:hunter_boots",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:gravitum_strider",
+                       "required":  false
+                   },
+                   {
+                       "id":  "morerelics:made_in_heaven",
+                       "required":  false
+                   },
+                   {
+                       "id":  "raccompat:acid_walker",
+                       "required":  false
+                   },
+                   {
+                       "id":  "raccompat:polar_boot",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:amphibian_boot",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:aqua_walker",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:ice_breaker",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:ice_skates",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:magma_walker",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:roller_skates",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:amphibian_boot",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:aqua_walker",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:ice_breaker",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:ice_skates",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:magma_walker",
+                       "required":  false
+                   },
+                   {
+                       "id":  "relics:roller_skates",
+                       "required":  false
+                   }
+               ]
+}
